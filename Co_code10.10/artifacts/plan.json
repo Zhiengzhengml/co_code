@@ -1,0 +1,22 @@
+{
+    "strategy": "Prioritize moving toward the goal direction when unblocked, otherwise check forward, left, right in fallback order, and stop if all are blocked",
+    "decisions": [
+        {
+            "condition": "Goal is ahead and front is clear",
+            "action": "FORWARD"
+        },
+        {
+            "condition": "Goal is left and left is clear",
+            "action": "LEFT"
+        },
+        {
+            "condition": "Goal is right and right is clear",
+            "action": "RIGHT"
+        },
+        {
+            "condition": "All directions are blocked",
+            "action": "STOP"
+        }
+    ],
+    "stop_condition": "All directions are blocked"
+}

@@ -1,0 +1,157 @@
+2026-10-10 19:58:28 | INFO     | ============================================================
+2026-10-10 19:58:28 | INFO     | ROBOT NAVIGATION PIPELINE - START
+2026-10-10 19:58:28 | INFO     | Started at: 2026-10-10T19:58:28
+2026-10-10 19:58:28 | INFO     | ============================================================
+2026-10-10 19:58:28 | INFO     | Directory already exists: artifacts/
+2026-10-10 19:58:28 | INFO     | Directory already exists: generated/
+2026-10-10 19:58:28 | INFO     | ============================================================
+2026-10-10 19:58:28 | INFO     | STEP 1: Loading requirements brief
+2026-10-10 19:58:28 | INFO     | ============================================================
+2026-10-10 19:58:28 | INFO     | Loaded existing brief.txt
+2026-10-10 19:58:28 | INFO     | Brief length: 543 characters
+2026-10-10 19:58:28 | INFO     | ============================================================
+2026-10-10 19:58:28 | INFO     | STEP 2: Running Analyst Agent
+2026-10-10 19:58:28 | INFO     | ============================================================
+2026-10-10 20:08:49 | INFO     | Analyst Agent created requirements.json
+2026-10-10 20:08:49 | INFO     | ============================================================
+2026-10-10 20:08:49 | INFO     | STEP 3: Running Planner Agent
+2026-10-10 20:08:49 | INFO     | ============================================================
+2026-10-10 20:12:08 | INFO     | Planner Agent created plan.json
+2026-10-10 20:12:08 | INFO     | ============================================================
+2026-10-10 20:12:08 | INFO     | STEP 4: Running Developer Agent
+2026-10-10 20:12:08 | INFO     | ============================================================
+2026-10-10 20:16:19 | INFO     | Developer Agent created navigation_logic.py
+2026-10-10 20:16:19 | INFO     | Developer Agent created generated/navigation_logic.py
+2026-10-10 20:16:19 | INFO     | ============================================================
+2026-10-10 20:16:19 | INFO     | STEP 5: Running Test Agent
+2026-10-10 20:16:19 | INFO     | ============================================================
+2026-10-10 20:25:15 | INFO     | Test Agent created test_generated_navigation_logic.py
+2026-10-10 20:25:15 | INFO     | ============================================================
+2026-10-10 20:25:15 | INFO     | STEP 6: Running Simulation
+2026-10-10 20:25:15 | INFO     | ============================================================
+2026-10-10 20:25:15 | INFO     | Simulation Runner created simulation_report.json
+2026-10-10 20:25:15 | INFO     | Simulation summary: 9/9 passed (success rate = 100.00%)
+2026-10-10 20:25:15 | INFO     | ============================================================
+2026-10-10 20:25:15 | INFO     | STEP 7: Running Reviewer Agent
+2026-10-10 20:25:15 | INFO     | ============================================================
+2026-10-10 20:26:04 | INFO     | Reviewer Agent created review_notes.json
+2026-10-10 20:26:04 | INFO     | Reviewer needs_revision = False
+2026-10-10 20:26:04 | INFO     | ============================================================
+2026-10-10 20:26:04 | INFO     | STEP 8: Running IR-SIM benchmark
+2026-10-10 20:26:04 | INFO     | ============================================================
+2026-10-10 20:26:04 | INFO     | Launching benchmark_irsim.py ...
+2026-10-10 20:27:24 | INFO     |   [benchmark] ============================================================
+2026-10-10 20:27:24 | INFO     |   [benchmark] Running benchmark on: irsim_worlds/world_easy.yaml
+2026-10-10 20:27:24 | INFO     |   [benchmark] ============================================================
+2026-10-10 20:27:24 | INFO     |   [benchmark]   -> reached_goal=True, steps=150, efficiency=efficient
+2026-10-10 20:27:24 | INFO     |   [benchmark] 
+2026-10-10 20:27:24 | INFO     |   [benchmark] ============================================================
+2026-10-10 20:27:24 | INFO     |   [benchmark] Running benchmark on: irsim_worlds/world_medium.yaml
+2026-10-10 20:27:24 | INFO     |   [benchmark] ============================================================
+2026-10-10 20:27:24 | INFO     |   [benchmark]   -> reached_goal=True, steps=148, efficiency=efficient
+2026-10-10 20:27:24 | INFO     |   [benchmark] 
+2026-10-10 20:27:24 | INFO     |   [benchmark] ============================================================
+2026-10-10 20:27:24 | INFO     |   [benchmark] Running benchmark on: irsim_worlds/world_hard.yaml
+2026-10-10 20:27:24 | INFO     |   [benchmark] ============================================================
+2026-10-10 20:27:24 | INFO     |   [benchmark]   -> reached_goal=True, steps=187, efficiency=efficient
+2026-10-10 20:27:24 | INFO     |   [benchmark] 
+2026-10-10 20:27:24 | INFO     |   [benchmark] ============================================================
+2026-10-10 20:27:24 | INFO     |   [benchmark] Running benchmark on: irsim_worlds/world_custom.yaml
+2026-10-10 20:27:24 | INFO     |   [benchmark] ============================================================
+2026-10-10 20:27:24 | INFO     |   [benchmark]   -> reached_goal=True, steps=193, efficiency=efficient
+2026-10-10 20:27:24 | INFO     |   [benchmark] 
+2026-10-10 20:27:24 | INFO     |   [benchmark] ============================================================
+2026-10-10 20:27:24 | INFO     |   [benchmark] BENCHMARK REPORT
+2026-10-10 20:27:24 | INFO     |   [benchmark] ============================================================
+2026-10-10 20:27:24 | INFO     |   [benchmark] {
+2026-10-10 20:27:24 | INFO     |   [benchmark]     "total_worlds": 4,
+2026-10-10 20:27:24 | INFO     |   [benchmark]     "goals_reached": 4,
+2026-10-10 20:27:24 | INFO     |   [benchmark]     "success_rate": 1.0,
+2026-10-10 20:27:24 | INFO     |   [benchmark]     "efficient_worlds": 4,
+2026-10-10 20:27:24 | INFO     |   [benchmark]     "inefficient_success_worlds": 0,
+2026-10-10 20:27:24 | INFO     |   [benchmark]     "failed_worlds": 0,
+2026-10-10 20:27:24 | INFO     |   [benchmark]     "efficiency_rate": 1.0,
+2026-10-10 20:27:24 | INFO     |   [benchmark]     "average_steps_taken": 169.5,
+2026-10-10 20:27:24 | INFO     |   [benchmark]     "results": [
+2026-10-10 20:27:24 | INFO     |   [benchmark]         {
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "reached_goal": true,
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "collision_or_done": false,
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "steps_taken": 150,
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "max_steps_allowed": 300,
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "efficient_step_limit": 200,
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "efficiency_status": "efficient",
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "efficiency_passed": true,
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "final_pose": [
+2026-10-10 20:27:24 | INFO     |   [benchmark]                 7.815877736477747,
+2026-10-10 20:27:24 | INFO     |   [benchmark]                 1.35416409613743,
+2026-10-10 20:27:24 | INFO     |   [benchmark]                 -0.7200000000000006
+2026-10-10 20:27:24 | INFO     |   [benchmark]             ],
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "history_length": 150,
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "world": "irsim_worlds/world_easy.yaml"
+2026-10-10 20:27:24 | INFO     |   [benchmark]         },
+2026-10-10 20:27:24 | INFO     |   [benchmark]         {
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "reached_goal": true,
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "collision_or_done": false,
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "steps_taken": 148,
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "max_steps_allowed": 300,
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "efficient_step_limit": 200,
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "efficiency_status": "efficient",
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "efficiency_passed": true,
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "final_pose": [
+2026-10-10 20:27:24 | INFO     |   [benchmark]                 7.712490771958734,
+2026-10-10 20:27:24 | INFO     |   [benchmark]                 4.253312110735628,
+2026-10-10 20:27:24 | INFO     |   [benchmark]                 -0.40000000000000036
+2026-10-10 20:27:24 | INFO     |   [benchmark]             ],
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "history_length": 148,
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "world": "irsim_worlds/world_medium.yaml"
+2026-10-10 20:27:24 | INFO     |   [benchmark]         },
+2026-10-10 20:27:24 | INFO     |   [benchmark]         {
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "reached_goal": true,
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "collision_or_done": false,
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "steps_taken": 187,
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "max_steps_allowed": 300,
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "efficient_step_limit": 200,
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "efficiency_status": "efficient",
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "efficiency_passed": true,
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "final_pose": [
+2026-10-10 20:27:24 | INFO     |   [benchmark]                 7.67814415627635,
+2026-10-10 20:27:24 | INFO     |   [benchmark]                 8.127051090332003,
+2026-10-10 20:27:24 | INFO     |   [benchmark]                 0.0
+2026-10-10 20:27:24 | INFO     |   [benchmark]             ],
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "history_length": 187,
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "world": "irsim_worlds/world_hard.yaml"
+2026-10-10 20:27:24 | INFO     |   [benchmark]         },
+2026-10-10 20:27:24 | INFO     |   [benchmark]         {
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "reached_goal": true,
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "collision_or_done": false,
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "steps_taken": 193,
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "max_steps_allowed": 300,
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "efficient_step_limit": 200,
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "efficiency_status": "efficient",
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "efficiency_passed": true,
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "final_pose": [
+2026-10-10 20:27:24 | INFO     |   [benchmark]                 7.963211951972691,
+2026-10-10 20:27:24 | INFO     |   [benchmark]                 4.376850671335502,
+2026-10-10 20:27:24 | INFO     |   [benchmark]                 -1.200000000000001
+2026-10-10 20:27:24 | INFO     |   [benchmark]             ],
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "history_length": 193,
+2026-10-10 20:27:24 | INFO     |   [benchmark]             "world": "irsim_worlds/world_custom.yaml"
+2026-10-10 20:27:24 | INFO     |   [benchmark]         }
+2026-10-10 20:27:24 | INFO     |   [benchmark]     ]
+2026-10-10 20:27:24 | INFO     |   [benchmark] }
+2026-10-10 20:27:24 | INFO     |   [benchmark] 
+2026-10-10 20:27:24 | INFO     |   [benchmark] Saved to: artifacts\irsim_benchmark_report.json
+2026-10-10 20:27:24 | INFO     | Loaded irsim_benchmark_report.json
+2026-10-10 20:27:24 | INFO     | ============================================================
+2026-10-10 20:27:24 | INFO     | STEP 9: Running Benchmark Reviewer
+2026-10-10 20:27:24 | INFO     | ============================================================
+2026-10-10 20:28:25 | INFO     | Benchmark Reviewer created benchmark_review.json
+2026-10-10 20:28:25 | INFO     | Benchmark Reviewer needs_revision = False
+2026-10-10 20:28:25 | INFO     | ============================================================
+2026-10-10 20:28:25 | INFO     | STEP 10: Checking whether revision is required
+2026-10-10 20:28:25 | INFO     | ============================================================
+2026-10-10 20:28:25 | INFO     | No revision required - navigation logic passed all checks
+2026-10-10 20:28:25 | INFO     | ============================================================
+2026-10-10 20:28:25 | INFO     | PIPELINE COMPLETED SUCCESSFULLY
+2026-10-10 20:28:25 | INFO     | Finished at: 2026-10-10T20:28:25
+2026-10-10 20:28:25 | INFO     | ============================================================
